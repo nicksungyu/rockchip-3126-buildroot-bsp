@@ -1,0 +1,60 @@
+Index: sdl2-2.0.14/src/video/wayland/SDL_waylandevents.c
+===================================================================
+--- sdl2-2.0.14.orig/src/video/wayland/SDL_waylandevents.c
++++ sdl2-2.0.14/src/video/wayland/SDL_waylandevents.c
+@@ -256,16 +256,10 @@ void
+ Wayland_PumpEvents(_THIS)
+ {
+     SDL_VideoData *d = _this->driverdata;
+-    struct SDL_WaylandInput *input = d->input;
+     int err;
+ 
+     WAYLAND_wl_display_flush(d->display);
+ 
+-    if (input) {
+-        uint32_t now = SDL_GetTicks();
+-        keyboard_repeat_handle(&input->keyboard_repeat, now);
+-    }
+-
+     if (SDL_IOReady(WAYLAND_wl_display_get_fd(d->display), SDL_FALSE, 0)) {
+         err = WAYLAND_wl_display_dispatch(d->display);
+     } else {
+@@ -737,9 +731,12 @@ keyboard_handle_key(void *data, struct w
+                     uint32_t state_w)
+ {
+     struct SDL_WaylandInput *input = data;
++    SDL_WindowData *window = input->keyboard_focus;
+     enum wl_keyboard_key_state state = state_w;
++    const xkb_keysym_t *syms;
+     uint32_t scancode = SDL_SCANCODE_UNKNOWN;
+     char text[8];
++    int size;
+ 
+     if (key < SDL_arraysize(xfree86_scancode_table2)) {
+         scancode = xfree86_scancode_table2[key];
+@@ -750,15 +747,19 @@ keyboard_handle_key(void *data, struct w
+         }
+     }
+ 
+-    if (state == WL_KEYBOARD_KEY_STATE_PRESSED) {
+-        SDL_bool has_text = keyboard_input_get_text(text, input, key);
+-        if (has_text) {
++    if(!window || window->keyboard_device != input || !input->xkb.state)
++        return;
++
++    if (WAYLAND_xkb_state_key_get_syms(input->xkb.state, key + 8, &syms) != 1)
++        return;
++
++    if (state) {
++        size = WAYLAND_xkb_keysym_to_utf8(syms[0], text, sizeof text);
++        if (size > 0) {
++            text[size] = 0;
+             Wayland_data_device_set_serial(input->data_device, serial);
+             SDL_SendKeyboardText(text);
+         }
+-        keyboard_repeat_set(&input->keyboard_repeat, scancode, has_text, text);
+-    } else {
+-        keyboard_repeat_clear(&input->keyboard_repeat);
+     }
+ }
+ 

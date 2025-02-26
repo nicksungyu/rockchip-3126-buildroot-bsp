@@ -1,0 +1,17 @@
+layer,x,y,w,h,tint,text_align,text_size,text_scale,text_font,stroke_tint,shadow_tint,effects
+,,,960,960,
+"lock_aspect,p",0,0,30,30,,"",,,"",,,""
+"<status>,p",0,0,0,0,,"",,,"",,,""
+"failure",69,59,32,28,,"",,,"",,,""
+"banned",71,60,29,30,,"",,,"",,,""
+"visibility2",72,62,27,27,,"",,,"",,,""
+"visibility1",72,62,27,27,,"",,,"",,,""
+"visibility0",72,62,27,27,,"",,,"",,,""
+"</status>,p",0,0,0,0,,"",,,"",,,""
+"wifi4#network_icon",37,33,43,13,,"",,,"",,,""
+"wifi3#network_icon",44,42,30,10,,"",,,"",,,""
+"wifi2#network_icon",50,50,18,8,,"",,,"",,,""
+"wifi1#network_icon",55,58,8,8,,"",,,"",,,""
+"bad#network_bad",28,59,21,21,,"",,,"",,,""
+"ether#network_icon",45,29,29,41,,"",,,"",,,""
+"net#network_background#network_border",32,22,54,54,,"",,,"",,,""

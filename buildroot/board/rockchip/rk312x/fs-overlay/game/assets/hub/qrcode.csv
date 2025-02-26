@@ -1,0 +1,15 @@
+layer,x,y,w,h,tint,text_align,text_size,text_scale,text_font,stroke_tint,shadow_tint,effects
+,,,1280,960,
+"qrcode,p",436,291,400,400,,"",,,"",,,""
+"qrcode_message,pm",256,211,758,6,,"",,,"",,,""
+"qrcode_message#backless_text_subpopup",635,224,1,1,#8E92AC,"c",24,100,"Arimo-Bold",,,""
+"<tint_text>,p",0,0,0,0,,"",,,"",,,""
+"<action>,p",0,0,0,0,,"",,,"",,,""
+"cancel_caps#button_normal_text",820,762,1,1,#8E92AC,"c",30,100,"Arimo-Bold",,,""
+"medium_off#button_normal_background#button_normal_border",646,726,348,50,,"",,,"",,,""
+"qrcode_manual#button_highlight_text",452,762,1,1,#E75828,"c",30,100,"Arimo-Bold",,,""
+"medium_on#button_highlight_background#button_highlight_border",278,726,348,50,,"",,,"",,,""
+"</action>,p",0,0,0,0,,"",,,"",,,""
+"</tint_text>,p",0,0,0,0,,"",,,"",,,""
+"settings$theme_assets",183,139,906,684,,"",,,"",,,""
+"modal,p",0,0,0,0,,"",,,"",,,""

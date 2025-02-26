@@ -1,0 +1,3 @@
+#!bin/sh
+
+arecord -D default -fs32_LE -d10 -c2 -r44100 /tmp/record.wav

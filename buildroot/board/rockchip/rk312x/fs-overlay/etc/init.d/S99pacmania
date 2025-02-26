@@ -1,0 +1,108 @@
+#!/bin/sh
+#
+. /etc/profile
+
+DEVICE_TYPE=`cat /proc/cmdline | awk -F\= '{print $2}' | cut -d " " -f 1`
+RECOVERY_FLAG=`cat /proc/cmdline | grep -c bte_recovery`
+
+if [ $DEVICE_TYPE == "nand" ];then
+	kernel_org=/dev/rknand0p3
+	rootfs_org=/dev/rknand0p4
+	recovery_kernel=/dev/rknand0p8
+	recovery_rootfs=/dev/rknand0p6
+	check_partition=/dev/rknand0p7
+elif [ $DEVICE_TYPE == "emmc" ];then
+	kernel_org=/dev/mmcblk0p3
+	rootfs_org=/dev/mmcblk0p4
+	recovery_kernel=/dev/mmcblk0p8
+	recovery_rootfs=/dev/mmcblk0p6
+	check_partition=/dev/rknand0p7
+fi
+
+do_check_recovery(){
+	if [ $RECOVERY_FLAG -eq "1" ];then
+		recovery_success=1
+		/usr/bin/show_do_not_power_off.sh /pic/do-not-power-off.png
+
+		echo "[BTE] Recovery start!" >> /dev/ttyFIQ0
+		# dd kernel
+		if [ -e $recovery_kernel ];then
+			echo "[BTE_RK3126] $recovery_kernel exist" >> /dev/ttyFIQ0
+			dd if=$recovery_kernel of=$kernel_org bs=1M
+			if [ $? -ne 0 ];then
+				echo [$0]: Failed to recovery kernel! >> /dev/ttyFIQ0
+				recovery_success=0
+			fi
+			sync
+		else
+			echo "[BTE_RK3126] $recovery_kernel not exist" >> /dev/ttyFIQ0
+			recovery_success=0
+		fi
+
+		# dd rootfs
+		if [ -e $recovery_rootfs ];then
+			echo "[BTE_RK3126] $recovery_rootfs exist" >> /dev/ttyFIQ0
+			dd if=$recovery_rootfs of=$rootfs_org bs=1M
+			if [ $? -ne 0 ];then
+				echo [$0]: Failed to recovery rootfs! >> /dev/ttyFIQ0
+				recovery_success=0
+			fi
+			sync
+		else
+			echo "[BTE_RK3126] $recovery_rootfs not exist" >> /dev/ttyFIQ0 
+			recovery_success=0
+		fi
+
+		if [ $recovery_success -eq "1" ];then
+			echo "[BTE_RK3126] recovery_success = 1" >> /dev/ttyFIQ0
+			mount $check_partition /mnt
+			if [ -e "/mnt/recovery.txt" ]; then
+				echo "[BTE_RK3126] remove recovery.txt" >> /dev/ttyFIQ0
+				rm /mnt/recovery.txt
+				if [ $? -ne 0 ]; then
+					echo [$0]: Failed to rm recovery.txt! >> /dev/ttyFIQ0
+				fi
+				umount /mnt
+			else
+				echo "[BTE_RK3126] recovery.txt not exist" >> /dev/ttyFIQ0
+			fi
+		fi
+		echo "[BTE_RK3126] Reboot, exec getty" >> /dev/ttyFIQ0
+		sync
+		# Reboot
+		/sbin/reboot
+	fi
+}
+
+
+case "$1" in
+  start)
+	if [ $RECOVERY_FLAG -eq "1" ];then
+		do_check_recovery 
+	else 
+		export LC_ALL='zh_CN.utf8'
+		insmod /bte-uart-kb.ko
+		insmod /8188fu.ko
+		sleep 1
+
+		export XDG_RUNTIME_DIR=${XDG_RUNTIME_DIR:-/var/run}
+		weston --tty=2 --idle-time=0&
+		{
+			#Wait for weston ready
+			while [ ! -e ${XDG_RUNTIME_DIR}/wayland-0 ]; do
+				export SDL_ASSERT="always_ignore"
+				sleep .1
+			done
+			cd /game
+			./start.sh &
+		}&
+	fi
+	;;
+  stop)
+#	start-stop-daemon -K -q -p /var/run/pacman.pid
+	;;
+  *)
+	echo "Usage: $0 {start|stop}"
+	exit 1
+	;;
+esac

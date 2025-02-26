@@ -1,0 +1,11 @@
+--- a/libweston/input.c	2022-11-07 22:44:44.091048022 +0800
++++ b/libweston/input.c	2022-11-08 21:45:59.654910312 +0800
+@@ -2729,7 +2729,7 @@ pointer_set_cursor(struct wl_client *cli
+ 	if (pointer->sprite && pointer->sprite->surface == surface &&
+ 	    pointer->hotspot_x == x && pointer->hotspot_y == y)
+ 		return;
+-
++	return; //enable hide cursor
+ 	if (!pointer->sprite || pointer->sprite->surface != surface) {
+ 		if (weston_surface_set_role(surface, "wl_pointer-cursor",
+ 					    resource,

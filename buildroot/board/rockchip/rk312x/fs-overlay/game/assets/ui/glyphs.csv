@@ -1,0 +1,4 @@
+layer,x,y,w,h,tint,text_align,text_size,text_scale,text_font,stroke_tint,shadow_tint,effects
+,,,256,32,
+"baseline,p",0,22,256,10,,"",,,"",,,""
+"ethernet",0,0,17,28,,"",,,"",,,""

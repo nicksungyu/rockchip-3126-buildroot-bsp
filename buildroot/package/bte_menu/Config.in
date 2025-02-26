@@ -1,0 +1,7 @@
+config BR2_PACKAGE_BTE_MENU
+	bool "bte_menu"
+	help
+	   For BTE MENU program
+
+
+

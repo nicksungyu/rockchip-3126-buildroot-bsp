@@ -1,0 +1,7 @@
+config BR2_PACKAGE_BTE_OTA
+	bool "bte_ota"
+	help
+	   For BTE OTA program
+
+
+

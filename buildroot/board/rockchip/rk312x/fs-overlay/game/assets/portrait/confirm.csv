@@ -1,0 +1,14 @@
+layer,x,y,w,h,tint,text_align,text_size,text_scale,text_font,stroke_tint,shadow_tint,effects
+,,,960,1280,
+"confirm,pm",245,556,475,11,,"",,,"",,,""
+"confirm#backless_text_subpopup",483,542,1,1,#8E92AC,"c",30,100,"Arimo-Bold",,,""
+"<labels>,p",0,0,0,0,,"",,,"",,,""
+"no#button_normal_text",317,738,1,1,#8E92AC,"l",30,100,"Arimo-Bold",,,""
+"yes#button_highlight_text",317,684,1,1,#E75828,"l",30,100,"Arimo-Bold",,,""
+"</labels>,p",0,0,0,0,,"",,,"",,,""
+"<buttons>,p",0,0,0,0,,"",,,"",,,""
+"narrow_off#button_normal_background#button_normal_border",247,709,470,38,,"",,,"",,,""
+"narrow_on#button_highlight_background#button_highlight_border",247,655,470,38,,"",,,"",,,""
+"</buttons>,p",0,0,0,0,,"",,,"",,,""
+"subpopup$wifi_menu_assets",149,393,664,494,,"",,,"",,,""
+"modal,p",0,0,0,0,,"",,,"",,,""

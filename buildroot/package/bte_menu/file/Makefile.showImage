@@ -1,0 +1,6 @@
+#export PATH=/home/share1/nick/rk3126/pacmania/buildroot/output/rockchip_rk312x/host/bin/:$PATH
+CC=arm-buildroot-linux-gnueabihf-g++
+
+all:
+	$(CC) -o showImage showImage.c -lSDL2 -lSDL2_image -I /home/share1/nick/rk3126/pacmania/buildroot/output/rockchip_rk312x/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/SDL2 -L /home/share1/nick/rk3126/pacmania/buildroot/output/rockchip_rk312x/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib$
+

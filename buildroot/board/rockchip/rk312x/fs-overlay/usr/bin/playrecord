@@ -1,0 +1,3 @@
+#!/bin/sh
+
+aplay -fs32_LE -c2 -r44100 /tmp/record.wav

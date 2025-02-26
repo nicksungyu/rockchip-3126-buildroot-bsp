@@ -1,0 +1,4 @@
+#!/bin/sh
+
+`echo "1" > /sys/class/gpio/gpio32/value` # muted speaker
+`echo "0" > /sys/class/gpio/gpio33/value` # muted hp

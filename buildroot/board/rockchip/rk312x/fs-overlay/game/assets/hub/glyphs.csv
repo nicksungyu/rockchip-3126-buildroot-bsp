@@ -1,0 +1,13 @@
+layer,x,y,w,h,tint,text_align,text_size,text_scale,text_font,stroke_tint,shadow_tint,effects
+,,,256,32,
+"baseline,p",0,22,256,10,,"",,,"",,,""
+"locked",238,0,18,21,,"",,,"",,,""
+"cross",210,0,27,21,,"",,,"",,,""
+"antarctica",182,0,27,21,,"",,,"",,,""
+"africa",154,0,27,21,,"",,,"",,,""
+"oceania",126,0,27,21,,"",,,"",,,""
+"europe",98,0,27,21,,"",,,"",,,""
+"asia",70,0,27,21,,"",,,"",,,""
+"south_america",42,0,27,21,,"",,,"",,,""
+"north_america",14,0,27,21,,"",,,"",,,""
+"ethernet",0,0,13,21,,"",,,"",,,""

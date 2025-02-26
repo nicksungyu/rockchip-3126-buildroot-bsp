@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# GPIO table => cat /sys/kernel/debug/gpio
+# export headset GPIO(GPIO1_A1) / set "out" direction / control "mute" or "unmute"
+echo "33" > /sys/class/gpio/export
+echo "out" > /sys/class/gpio/gpio33/direction
+echo "1" > /sys/class/gpio/gpio33/value
+
+# export headset detect function, if headset port was inserted, the value would be "0",else "1".
+echo "3" > /sys/class/gpio/export
+echo "in" > /sys/class/gpio/gpio3/direction
+
+# export spk-ctl GPIO(GPIO1_A0) / control "mute"(1) or "unmute"(0) 
+echo "32" > /sys/class/gpio/export
+echo "out" > /sys/class/gpio/gpio32/direction
+
+# headset & speaker daemon 
+/usr/bin/hp_spk_switch &

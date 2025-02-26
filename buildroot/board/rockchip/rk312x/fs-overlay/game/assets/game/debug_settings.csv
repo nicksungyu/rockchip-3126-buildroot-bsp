@@ -1,0 +1,3 @@
+index,game,name,id,text,default,base,multiplier,option,,
+-1,debug,Debug Menu,console,Console Overlay,0,,,Off,On,
+,,,frame_counter,Display FPS,0,,,Off,On (VSync),On (Logic)

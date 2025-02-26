@@ -1,0 +1,19 @@
+#!/bin/sh
+#
+
+case "$1" in
+  start)
+    alsactl restore -f /etc/asound.state
+    amixer cset name='Playback Path' 'SPK'
+    amixer cset name='Master Playback Volume' 100
+    # setting amixer : open mic
+    amixer cset numid=2,iface=MIXER,name='Capture MIC Path' 1
+    ;;
+  stop)
+    alsactl store -f /userdata/asound.state
+    ;;
+  *)
+    echo "Usage: $0 {start|stop}"
+    exit 1
+    ;;
+esac

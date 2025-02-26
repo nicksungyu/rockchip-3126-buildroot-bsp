@@ -1,0 +1,11 @@
+layer,x,y,w,h,tint,text_align,text_size,text_scale,text_font,stroke_tint,shadow_tint,effects
+,,,1280,960,
+"body,p",400,378,475,11,,"",,,"",,,""
+"body#backless_text_subpopup",638,351,1,1,#8E92AC,"c",30,100,"Arimo-Bold",,,""
+"cancel#button_highlight_text",626,619,1,1,#E75828,"c",30,100,"Arimo-Bold",,,""
+"narrow_on#button_highlight_background#button_highlight_border",402,590,470,38,,"",,,"",,,""
+"<anim>,p",0,0,0,0,,"",,,"",,,""
+"anim,p",523,387,204,205,,"",,,"",,,""
+"</anim>,p",0,0,0,0,,"",,,"",,,""
+"subpopup$theme_assets",305,232,664,494,,"",,,"",,,""
+"modal,p",0,0,0,0,,"",,,"",,,""

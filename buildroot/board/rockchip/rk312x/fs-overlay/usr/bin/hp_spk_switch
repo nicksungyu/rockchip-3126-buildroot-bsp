@@ -1,0 +1,16 @@
+#!/bin/sh
+
+
+while true; do
+	hp_value=`cat /sys/class/gpio/gpio3/value`
+	if [ x"${hp_value}" == x"0" ]; then # headset inserted
+		`echo "1" > /sys/class/gpio/gpio32/value` # muted speaker
+	elif [ x"${hp_value}" == x"1" ]; then
+                `echo "0" > /sys/class/gpio/gpio32/value` # unmuted speaker
+	else
+		`echo hp_value=${hp_value}, hp_sp_switch error!`
+	fi
+	sleep 1
+done
+
+
