@@ -1,0 +1,4 @@
+layer,x,y,w,h,tint,text_align,text_size,text_scale,text_font,stroke_tint,shadow_tint,effects
+,,,300,200,
+"u#backless_text_bold",150,134,1,1,#00FFFA,"c",30,100,"Arimo-Bold",,,""
+"t#toast_bold",150,54,1,1,#11D1DA,"c",30,100,"Arimo-Bold",,,""

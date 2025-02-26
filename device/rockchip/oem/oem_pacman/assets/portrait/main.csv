@@ -1,0 +1,11 @@
+layer,x,y,w,h,tint,text_align,text_size,text_scale,text_font,stroke_tint,shadow_tint,effects
+,,,960,1280,
+"help,pb",33,1241,812,5,,"",,,"",,,""
+"help#backless_text_hint",33,1240,1,1,#8E92AC,"l",24,100,"Arimo",,,""
+"online_help,pm",502,646,396,6,,"",,,"",,,""
+"online_help#backless_text_error",699,656,1,1,#E75828,"c",24,100,"Arimo",,,""
+"panel_none,p",0,0,0,0,,"",,,"",,,""
+"panel_on,p",0,0,0,0,,"",,,"",,,""
+"panel_off,p",0,0,0,0,,"",,,"",,,""
+"background,p",0,0,960,1280,,"",,,"",,,""
+"modal,p",0,0,0,0,,"",,,"",,,""

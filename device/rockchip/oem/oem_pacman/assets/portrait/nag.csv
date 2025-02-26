@@ -1,0 +1,17 @@
+layer,x,y,w,h,tint,text_align,text_size,text_scale,text_font,stroke_tint,shadow_tint,effects
+,,,960,1280,
+"nag,p",124,360,714,21,,"",,,"",,,""
+"nag#backless_text_popup",128,384,1,1,#E75828,"l",30,100,"Arimo-Bold",,,""
+"<labels>,p",0,0,0,0,,"",,,"",,,""
+"stop_nagging#button_normal_text",465,909,1,1,#8E92AC,"c",30,100,"Arimo-Bold",,,""
+"no_caps#button_normal_text",465,817,1,1,#8E92AC,"c",30,100,"Arimo-Bold",,,""
+"yes_caps#button_highlight_text",465,725,1,1,#E75828,"c",30,100,"Arimo-Bold",,,""
+"</labels>,p",0,0,0,0,,"",,,"",,,""
+"<buttons>,p",0,0,0,0,,"",,,"",,,""
+"button2,p",101,875,755,50,,"",,,"",,,""
+"wide_off#button_normal_background#button_normal_border",101,783,755,50,,"",,,"",,,""
+"wide_on#button_highlight_background#button_highlight_border",101,691,755,50,,"",,,"",,,""
+"</buttons>,p",0,0,0,0,,"",,,"",,,""
+"settings$wifi_menu_assets",25,296,906,688,,"",,,"",,,""
+"fader,r",0,0,960,1280,#80000000,"",,,"",,,""
+"modal,p",0,0,0,0,,"",,,"",,,""

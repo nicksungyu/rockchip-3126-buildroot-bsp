@@ -1,0 +1,25 @@
+id	en
+help_SOCIAL OPTIONS	Press any button to set up or change your Social Options. Social Options set whether you appear in the Global Leaderboard and also who you see in the Global Leaderboard.
+help_FAVOURITES	The Favorites List allows you to identify people you want to keep track of. Favorite players will be highlighted in the Leaderboards. Press any button to edit your Favorites List.
+help_public	Press any button to set your name as it will appear publicly on the Leaderboards. Move left to leave this menu.
+help_factory	"Press any button to clear all settings stored on this machine and restore Factory Defaults. Note: if you have set your Email, Public Name, and/or Favorites List, a copy of these items are stored online and associated with this machine. To clear these online items as well, be sure you are online before selecting Restore Factory Defaults."
+set_factory	"Select ""Yes"" to clear all settings stored on this machine and restore Factory Defaults. Note: if you have set your Email, Public Name, and/or Favorites List, a copy of these items are stored online and associated with this machine. To clear these online items as well, be sure you are online before selecting Restore Factory Defaults."
+factory_offline	"{!u}***WARNING*** YOU ARE OFFLINE!
+Some settings cannot be reset when you are offline!{.}
+
+This option will remove your Network Setup stored on this machine, but if you have registered your Email, created a Public Name, and/or Favorites List for this machine, you will need to be online to clear these settings too.
+
+Are you sure you want to continue?"
+factory_online	"{!u}***WARNING***{.}
+
+This option will erase your Public Name, Favorites List, and Network Setup. This action cannot be undone!
+
+{!u}Are you sure you want to continue?{.}"
+factory_error_block	ERROR: could not clear Favorites on server!
+factory_busy_block	Removing Favorites...
+nag	"WIRELESS SETUP:
+
+Enjoy our {!}Online Leaderboards{.} feature and FREE updates by connecting to your Wireless Network.
+
+NOTE: a wireless connection is not needed for local play. Setup Wireless Network now?"
+help_in_settings	"Move up or down to select an option for %s. To change that option, move left or right, or press any button. Select ""HIDE THIS MENU"" when done. To appear on the Arcade Settings Leaderboards, use only settings marked with *."

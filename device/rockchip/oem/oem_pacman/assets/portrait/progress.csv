@@ -1,0 +1,8 @@
+layer,x,y,w,h,tint,text_align,text_size,text_scale,text_font,stroke_tint,shadow_tint,effects
+,,,960,1280,
+"text,pm",244,580,469,9,,"",,,"",,,""
+"text#backless_text_subpopup",479,592,1,1,#E75828,"c",30,100,"Arimo-Bold",,,""
+"progress_bar#progress_bar_fill#progress_bar_border",246,673,470,38,,"",,,"",,,""
+"narrow_off#progress_bar_background#progress_bar_border",246,673,470,38,,"",,,"",,,""
+"subpopup$wifi_menu_assets",149,393,664,494,,"",,,"",,,""
+"fader,r",0,0,960,1280,#80000000,"",,,"",,,""

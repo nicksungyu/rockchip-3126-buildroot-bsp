@@ -1,0 +1,5 @@
+layer,x,y,w,h,tint,text_align,text_size,text_scale,text_font,stroke_tint,shadow_tint,effects
+,,,300,200,
+"u#backless_text_bold",150,94,1,1,#00FFFA,"c",30,100,"Arimo-Bold",,,""
+"h#score_normal_favourite",150,134,1,1,#8B62FF,"c",30,100,"Arimo-Bold",,,""
+"d",150,54,1,1,#808E92AC,"c",30,100,"Arimo-Bold",,,""

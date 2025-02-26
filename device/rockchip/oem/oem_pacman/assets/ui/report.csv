@@ -1,0 +1,17 @@
+layer,x,y,w,h,tint,text_align,text_size,text_scale,text_font,stroke_tint,shadow_tint,effects
+,,,1280,960,
+"report#backless_text_subpopup",638,311,1,1,#8E92AC,"c",30,100,"Arimo-Bold",,,""
+"<labels>,p",0,0,0,0,,"",,,"",,,""
+"cancel#button_normal_text",470,635,1,1,#8E92AC,"l",30,100,"Arimo-Bold",,,""
+"report2#button_normal_text",470,571,1,1,#8E92AC,"l",30,100,"Arimo-Bold",,,""
+"report1#button_normal_text",470,507,1,1,#8E92AC,"l",30,100,"Arimo-Bold",,,""
+"report0#button_highlight_text",470,443,1,1,#E75828,"l",30,100,"Arimo-Bold",,,""
+"</labels>,p",0,0,0,0,,"",,,"",,,""
+"<buttons>,p",0,0,0,0,,"",,,"",,,""
+"button4,p",402,606,470,38,,"",,,"",,,""
+"button3,p",402,542,470,38,,"",,,"",,,""
+"narrow_off#button_normal_background#button_normal_border",402,478,470,38,,"",,,"",,,""
+"narrow_on#button_highlight_background#button_highlight_border",402,414,470,38,,"",,,"",,,""
+"</buttons>,p",0,0,0,0,,"",,,"",,,""
+"peer$theme_assets",367,233,538,491,,"",,,"",,,""
+"modal,p",0,0,1280,960,,"",,,"",,,""

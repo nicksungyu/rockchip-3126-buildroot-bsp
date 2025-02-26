@@ -1,0 +1,9 @@
+layer,x,y,w,h,tint,text_align,text_size,text_scale,text_font,stroke_tint,shadow_tint,effects
+,,,960,1280,
+"wifi4#network_icon",881,1204,43,13,,"",,,"",,,""
+"wifi3#network_icon",888,1213,30,10,,"",,,"",,,""
+"wifi2#network_icon",894,1221,18,8,,"",,,"",,,""
+"wifi1#network_icon",899,1229,8,8,,"",,,"",,,""
+"bad#network_bad",872,1230,21,21,,"",,,"",,,""
+"ether#network_icon",889,1200,29,41,,"",,,"",,,""
+"net#network_background#network_border",876,1193,54,54,,"",,,"",,,""

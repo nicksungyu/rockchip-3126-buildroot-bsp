@@ -1,0 +1,17 @@
+layer,x,y,w,h,tint,text_align,text_size,text_scale,text_font,stroke_tint,shadow_tint,effects
+,,,1280,960,
+"nag,p",282,201,714,21,,"",,,"",,,""
+"nag#backless_text_popup",286,225,1,1,#E75828,"l",30,100,"Arimo-Bold",,,""
+"<labels>,p",0,0,0,0,,"",,,"",,,""
+"stop_nagging#button_normal_text",623,750,1,1,#8E92AC,"c",30,100,"Arimo-Bold",,,""
+"no_caps#button_normal_text",623,658,1,1,#8E92AC,"c",30,100,"Arimo-Bold",,,""
+"yes_caps#button_highlight_text",623,566,1,1,#E75828,"c",30,100,"Arimo-Bold",,,""
+"</labels>,p",0,0,0,0,,"",,,"",,,""
+"<buttons>,p",0,0,0,0,,"",,,"",,,""
+"button2,p",259,716,755,50,,"",,,"",,,""
+"wide_off#button_normal_background#button_normal_border",259,624,755,50,,"",,,"",,,""
+"wide_on#button_highlight_background#button_highlight_border",259,532,755,50,,"",,,"",,,""
+"</buttons>,p",0,0,0,0,,"",,,"",,,""
+"settings$theme_assets",183,139,906,684,,"",,,"",,,""
+"fader,r",0,0,1280,960,#80000000,"",,,"",,,""
+"modal,p",0,0,0,0,,"",,,"",,,""

@@ -1,0 +1,37 @@
+id	en
+help_SOCIAL OPTIONS	Press any button to set up or change your Social Options. Social Options set whether you appear in the Global Leaderboard and also who you see in the Global Leaderboard.
+help_FAVOURITES	The Favorites List allows you to identify people you want to keep track of. Favorite players will be highlighted in the Leaderboards. Press any button to edit your Favorites List.
+help_public	Press any button to set your name as it will appear publicly on the Leaderboards. Move left to leave this menu.
+help_factory	"Press any button to clear all settings stored on this machine and restore Factory Defaults. Note: if you have set your Email, Public Name, and/or Favorites List, a copy of these items are stored online and associated with this machine. To clear these online items as well, be sure you are online before selecting Restore Factory Defaults."
+set_factory	"Select ""Yes"" to clear all settings stored on this machine and restore Factory Defaults. Note: if you have set your Email, Public Name, and/or Favorites List, a copy of these items are stored online and associated with this machine. To clear these online items as well, be sure you are online before selecting Restore Factory Defaults."
+factory_offline	"{!u}***WARNING*** YOU ARE OFFLINE!
+Some settings cannot be reset when you are offline!{.}
+
+This option will remove your Network Setup stored on this machine, but if you have registered your Email, appear on the Leaderboards, created a Public Name, and/or Favorites List for this machine, you will need to be online to clear these settings too.
+
+Are you sure you want to continue?"
+factory_online	"{!u}***WARNING***{.}
+
+This option will erase your Public Name, Leaderboard Entries, Favorites List, and Network Setup. This action cannot be undone!
+
+{!u}Are you sure you want to continue?{.}"
+factory_error_block	ERROR: could not clear Favorites on server!
+factory_busy_block	Removing Favorites...
+nag	"WIRELESS SETUP:
+
+Enjoy our {!}Online Leaderboards{.} feature and FREE updates by connecting to your Wireless Network.
+
+NOTE: a wireless connection is not needed for local play. Setup Wireless Network now?"
+help_in_settings	"Move up or down to select an option for %s. To change that option, move left or right, or press any button. Select ""HIDE THIS MENU"" when done. To appear on the Arcade Settings Leaderboards, use only settings marked with *."
+[mouse]help_game	Press any button to start %s. Aim at a different game to select it. Aim at a gear icon to change the settings for a game. Aim at the right panel to access Online Features.
+[mouse]help_game_no_boards	Press any button to start %s. Aim at a different game to select it. Aim at a gear icon to change the settings for a game.
+[mouse]help_game_no_settings	Press any button to start %s. Aim at a different game to select it. Aim at the right panel to access Online Features.
+[mouse]help_game_no_anything	Press any button to start %s. Aim at a different game to select it.
+[mouse]help_online_setup	Press any button to set up Online Features. Aim at a different game to select it.
+[mouse]help_settings	Press any button to access settings for %s. Aim at a different game to select it.
+[mouse]help_join	Press any button to select an online game of %s to join. Aim at the Leaderboards and press a button to browse them. Aim at a game on the left to start your own game.
+[mouse]help_leaderboard	Press any button to browse the Leaderboard for %s. Aim at the list of Available Games to select an online game to join. Aim at a game on the left to select it.
+[mouse]help_leaderboards	Press any button to browse this Leaderboard for %s. Aim at the Leaderboard Name and press a button to view a different Leaderboard. Aim at the Available Games list to select an online game to join. Aim at a game on the left to select it.
+[mouse]help_leaderboard_no_online	Press any button to browse the Leaderboard for %s. Aim at a game on the left to select it.
+[mouse]help_leaderboards_no_online	Press any button to browse this Leaderboard for %s. Aim at the Leaderboard Name and press a button to view a different Leaderboard. Aim at a game on the left to select it.
+[mouse]leaderboard_zoom	"Aim at the upper or lower half of this Leaderboard and press any button to change pages. To select a different Leaderboard, aim at the Leaderboard Name and press a button. Aim at a game on the left to select it."

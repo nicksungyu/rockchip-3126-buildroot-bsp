@@ -1,0 +1,11 @@
+layer,x,y,w,h,tint,text_align,text_size,text_scale,text_font,stroke_tint,shadow_tint,effects
+,,,960,960,
+"lock_aspect,p",930,0,30,30,,"",,,"",,,""
+"wrap,p",291,21,642,69,,"",,,"",,,""
+"text#toast_text",931,47,1,1,#E75828,"r",30,100,"Arimo-Bold",,,""
+"<progress>,p",0,0,0,0,,"",,,"",,,""
+"fill#progress_bar_fill",298,73,628,6,,"",,,"",,,""
+"border#progress_bar_background#progress_bar_border",295,70,634,12,,"",,,"",,,""
+"</progress>,p",0,0,0,0,,"",,,"",,,""
+"toast#toast_background#toast_border",277,11,671,88,,"",,,"",,,""
+"fader,r",0,0,960,960,#80000000,"",,,"",,,""
