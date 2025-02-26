@@ -1,1 +1,1 @@
-# nicksungyu-rockchip-3126-buildroot-bsp
+# rockchip-3126-buildroot-bsp
