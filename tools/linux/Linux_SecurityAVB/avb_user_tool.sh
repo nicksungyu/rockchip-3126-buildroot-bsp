@@ -1,0 +1,1 @@
+tools/linux/Linux_SecurityAVB/avb_user_tool.sh

@@ -1,0 +1,1 @@
+tools/linux/Linux_Pack_Firmware/rockdev/rk3326-mkupdate.sh

@@ -1,0 +1,1 @@
+tools/windows/RKDevTool/rockdev/px3se-mkupdate.bat

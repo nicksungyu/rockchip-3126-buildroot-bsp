@@ -1,0 +1,1 @@
+tools/windows/RKDevTool/rockdev/rk3128-mkupdate.bat

@@ -1,0 +1,1 @@
+tools/linux/Linux_Pack_Firmware/rockdev/rv1126_rv1109-mkupdate.sh

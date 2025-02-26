@@ -1,0 +1,1 @@
+tools/linux/Linux_SecurityAVB/scripts/avb-challenge-verify.py
