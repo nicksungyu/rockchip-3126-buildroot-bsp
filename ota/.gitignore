@@ -1,0 +1,8 @@
+list.txt
+ota.zip
+ota.enc
+boot.img.enc
+oem.img.enc
+rootfs.img.enc
+ota.key.enc
+*.zip

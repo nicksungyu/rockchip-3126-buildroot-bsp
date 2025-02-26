@@ -1,0 +1,1 @@
+rkbin/scripts/checkpatch.sh

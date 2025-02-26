@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=multicamera
+Exec=/usr/bin/multicamera
+Icon=/usr/share/icon/icon_multicamera.png
+Type=Application
