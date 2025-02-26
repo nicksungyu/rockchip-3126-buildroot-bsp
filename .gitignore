@@ -1,0 +1,5 @@
+/IMAGE/
+/rockdev/
+.*.swp
+/br.log
+./kernel/Module.symvers
